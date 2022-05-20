@@ -1,0 +1,40 @@
+
+### CLIENTES ###
+###
+
+GET http://localhost:3000/api/clientes
+
+###
+
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Pepe",
+  "apellidos": "Viyuela",
+  "direccion": "c olvido 10",
+  "telefono": 666666666,
+  "fecha_nacimiento": "1980-03-10",
+  "dni": "99999999x",
+  "email": "pepeviyuela@gmail.com"
+}
+
+###
+
+PUT  http://localhost:3000/api/clientes/3
+Content-Type: application/json
+
+{
+    "nombre": "pepe",
+    "apellidos": "rus",
+    "direccion": "adios",
+    "telefono": "888888888",
+    "fecha_nacimiento": "1980-03-10",
+    "dni": "12345678e",
+    "email": "domi@gmail.com"
+}
+
+###
+
+
+DELETE  http://localhost:3000/api/clientes/2

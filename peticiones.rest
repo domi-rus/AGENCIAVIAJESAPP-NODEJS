@@ -28,7 +28,7 @@ Content-Type: application/json
     "nombre": "pepe",
     "apellidos": "rus",
     "direccion": "adios",
-    "telefono": "888888888",
+    "telefono": "999999999",
     "fecha_nacimiento": "1980-03-10",
     "dni": "12345678e",
     "email": "domi@gmail.com"
@@ -37,4 +37,49 @@ Content-Type: application/json
 ###
 
 
-DELETE  http://localhost:3000/api/clientes/2
+DELETE  http://localhost:3000/api/clientes/6
+
+
+### HOTELES ###
+###
+
+GET http://localhost:3000/api/hoteles
+
+
+###
+
+POST http://localhost:3000/api/hoteles
+Content-Type: application/json
+
+{
+   "nombre": "Pequeñajo",
+    "direccion": "perdida,2",
+    "ciudad": "Jaen",
+    "num_estrellas": 3,
+    "descripcion": "Regulero",
+    "tarifa": 50
+}
+
+###
+
+PUT  http://localhost:3000/api/hoteles/3
+Content-Type: application/json
+
+{
+   "nombre": "Pequeñajo",
+    "direccion": "perdida,2",
+    "ciudad": "Jaen",
+    "num_estrellas": 3,
+    "descripcion": "Regulero lagarto",
+    "tarifa": 50
+}
+
+###
+
+DELETE  http://localhost:3000/api/hoteles/3
+
+###
+
+
+
+

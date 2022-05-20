@@ -17,7 +17,7 @@ const getById = (pClienteId) => {
 const update = (pClienteId, { nombre, apellidos, direccion, telefono, fecha_nacimiento, email, dni }) => {
   return executeQuery(
     "update clientes set  nombre = ?, apellidos = ?, direccion = ?, telefono = ?, fecha_nacimiento = ?, email = ?, dni = ?  where id = ?",
-    [nombre, apellidos, direccion, telefono, fecha_nacimiento, email, dni, pClienteId,]);
+    [nombre, apellidos, direccion, telefono, fecha_nacimiento, email, dni, pClienteId]);
 };
 
 const deleteById = (pClienteId) => {

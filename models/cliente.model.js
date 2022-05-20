@@ -25,7 +25,11 @@ const deleteById = (pClienteId) => {
     [pClienteId]);
 }
 
+const createClienteViaje = (pClienteId, pviajeId) => {
+  return executeQuery("insert into clientes_viajes (cliente_id, viaje_id) values(?, ?)", [pClienteId, pviajeId])
+}
+
 
 module.exports = {
-  getAll, create, getById, update, deleteById
+  getAll, create, getById, update, deleteById, createClienteViaje
 }

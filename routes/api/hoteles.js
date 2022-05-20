@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { getAll, create, getById, update, deleteById } = require('../../models/hotel.model')
 
+
 router.get('/', async (req, res) => {
 
   try {

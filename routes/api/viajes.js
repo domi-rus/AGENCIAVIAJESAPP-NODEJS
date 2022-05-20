@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { getAll, create, getById, update, deleteById } = require('../../models/viaje.model')
 
+
+
 router.get('/', async (req, res) => {
 
   try {

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { getAll, create, getById, update, deleteById } = require('../../models/cliente.model')
+const { getAll, create, getById, update, deleteById, createClienteViaje } = require('../../models/cliente.model')
 
 router.get('/', async (req, res) => {
 
@@ -22,6 +22,20 @@ router.post('/', async (req, res) => {
 
   } catch (err) {
     res.json({ error: err.message });
+  }
+});
+
+router.post("/:clienteId/viajes/:viajeId", async (req, res) => {
+
+  try {
+    const clienteId = req.params.clienteId;
+    const viajeId = req.params.viajeId;
+    const clienteViaje = await createClienteViaje(clienteId, viajeId);
+    res.json(clienteViaje);
+
+  } catch (err) {
+    res.json({ error: err.message })
+
   }
 });
 

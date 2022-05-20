@@ -92,11 +92,35 @@ Content-Type: application/json
 
 {
     "fecha_salida": "2023-05-12 09:20:00",
-    "fecha_vuelta": "2023-07-31 08:40:00",
-    "id_vuelo_ida": "Malaga ma002",
-    "id_vuelo_vuelta": "Paris pa003",
+    "fecha_vuelta": "2023-07-15 08:10:00",
+    "id_vuelo_ida": "MA002",
+    "id_vuelo_vuelta": "TF003",
+    "hotel_id": 2
+}
+
+###
+
+PUT  http://localhost:3000/api/viajes/2
+Content-Type: application/json
+
+{
+    "fecha_salida": "2023-01-24 01:20:00",
+    "fecha_vuelta": "2023-02-12 03:30:00",
+    "id_vuelo_ida": "AGP004",
+    "id_vuelo_vuelta": "FL00009",
     "hotel_id": 1
 }
+
+###
+
+DELETE  http://localhost:3000/api/viajes/4
+
+
+###
+
+
+POST http://localhost:3000/api/clientes/1/viajes/1
+Content-Type: application/json
 
 
 

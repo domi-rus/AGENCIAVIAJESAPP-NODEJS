@@ -16,9 +16,9 @@ router.post('/', async (req, res) => {
   try {
     const result = await create(req.body);
 
-    const newClient = await getById(result.insertId);
+    const newCliente = await getById(result.insertId);
 
-    res.json(newClient);
+    res.json(newCliente);
 
   } catch (err) {
     res.json({ error: err.message });

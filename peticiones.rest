@@ -79,6 +79,24 @@ Content-Type: application/json
 DELETE  http://localhost:3000/api/hoteles/3
 
 ###
+### VIAJES ###
+###
+
+GET http://localhost:3000/api/viajes
+
+###
+
+
+POST http://localhost:3000/api/viajes
+Content-Type: application/json
+
+{
+    "fecha_salida": "2023-05-12 09:20:00",
+    "fecha_vuelta": "2023-07-31 08:40:00",
+    "id_vuelo_ida": "Malaga ma002",
+    "id_vuelo_vuelta": "Paris pa003",
+    "hotel_id": 1
+}
 
 
 
